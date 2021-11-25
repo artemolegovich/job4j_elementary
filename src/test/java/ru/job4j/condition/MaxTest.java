@@ -14,7 +14,7 @@ public class MaxTest {
     }
 
     @Test
-    public void when10To2Then2() {
+    public void when10To2Then10() {
         int expected = 10;
         int left = 10;
         int right = 2;
