@@ -30,4 +30,37 @@ public class FindLoopTest {
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenFind3() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = 3;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenFind6() {
+        int[] data = new int[] {5, 2, 10, 6, 3, 7, 9, 2, 4};
+        int el = 6;
+        int start = 1;
+        int finish = 5;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = 3;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenDontFind7() {
+        int[] data = new int[] {5, 2, 10, 2, 4, 5, 2, 10, 11};
+        int el = 7;
+        int start = 2;
+        int finish = 7;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = -1;
+        Assert.assertEquals(expected, result);
+    }
 }
