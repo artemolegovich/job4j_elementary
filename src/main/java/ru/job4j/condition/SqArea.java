@@ -8,7 +8,7 @@ public class SqArea {
     }
 
     public static void main(String[] args) {
-        double result1 = SqArea.square(6, 2);
-        System.out.println("Площадь прямоугольника равна " + result1);
+        double result = SqArea.square(6, 2);
+        System.out.println("Площадь прямоугольника равна " + result);
     }
 }
